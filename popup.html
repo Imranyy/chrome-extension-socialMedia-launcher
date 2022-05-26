@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./css/materialize.min.css">
-    <link rel="apple-touch-icon" href="icons/icon_150x150 .png">
+    <link rel="apple-touch-icon" href="icons/icon_128x128.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <script defer src="./js/popup.js"></script>
+    <script src="./js/materialize.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -20,9 +21,16 @@
                 <div class="card-content">
                   <form id="one" >
                             <div class="input-field customfont" >
-                              <input type="text" id="media" name="media"  required/>
-                              <label for="media">Enter Your Social Media</label>
+                              <select name="media">
+                                <option value="" disabled selected>Options</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Github">Github</option>
+                                <option value="Twitter">Twitter</option>
+                              </select>
+                              <label>Choose Social Media</label>
                             </div>
+                            
                             <div class="input-field customfont" >
                               <input type="text" id="username" name="username" required />
                               <label for="username">Enter Username</label>

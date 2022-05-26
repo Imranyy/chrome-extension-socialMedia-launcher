@@ -1,4 +1,7 @@
-
+document.addEventListener('DOMContentLoaded', ()=>{
+  const select=document.querySelectorAll('select');
+  M.FormSelect.init(select)
+ })
 //input logics
 const formOne =document.querySelector('#one')
 formOne.addEventListener('submit',(e)=>{
@@ -10,3 +13,5 @@ formOne.addEventListener('submit',(e)=>{
         window.open(`https://${localStorage.getItem('media')}.com/${localStorage.getItem('username')}`, '_blank');
         formOne.reset();
          });
+
+        
