@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Launcher</title>
+    <title>Social Media Launcher</title>
     <link rel="manifest" href="./manifest.json">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -13,6 +13,25 @@
     <script defer src="./js/popup.js"></script>
 </head>
 <body>
+    <div class="container">
+        <div class="section">
+            <div class="card grey lighten-2">
+                <div class="card-title" style="margin-left: 4%;"><h4 class="light customfont"><i class="material-icons left" style="margin-top: 1%;">rocket_launch</i>Scrape</h4></div>
+                <div class="card-content">
+                  <form id="one" >
+                            <div class="input-field customfont" >
+                              <input type="text" id="media" name="media"  required/>
+                              <label for="media">Enter Your Social Media</label>
+                            </div>
+                            <div class="input-field customfont" >
+                              <input type="text" id="username" name="username" required />
+                              <label for="username">Enter Username</label>
+                             </div>
+                        <button id="sub" class="btn grey darken-2 customfont">Scrape <i class="material-icons right">rocket_launch</i></button>
+                      </form>
+                </div>
+            </div>
+        </div>  
 
     
 </body>
